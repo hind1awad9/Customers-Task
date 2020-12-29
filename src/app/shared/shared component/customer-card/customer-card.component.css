@@ -1,0 +1,33 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 5px;
+  }
+  .card-header
+  {
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  .card-header .text
+  {
+      float:left
+  }
+  .card-header .icon 
+  {
+      float: right;
+      cursor: pointer;
+      outline: none;
+  }
+  .clear
+  {
+      clear:both
+  }
+  p
+  {
+      margin-bottom: 0;
+  }
+  .card-body
+  {
+      padding-top: 0;
+  }

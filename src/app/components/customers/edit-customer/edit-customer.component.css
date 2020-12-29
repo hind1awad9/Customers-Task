@@ -1,0 +1,90 @@
+input
+{
+    height: 50px;
+    border-color: #f0f0f1;
+    outline: none;
+}
+label
+{
+    color: #283b8f;
+    font-size: 1.3em;
+}
+.container-fluid
+{
+    background: linear-gradient(45deg, rgba(0, 180, 153, 0.9), rgba(40, 59, 143, 1));
+    height: 100%;
+    direction: ltr;
+    text-align: left;
+}
+form
+{
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: calc(15%);
+    right: calc(50% - 200px);
+    text-align: left;
+    direction: ltr;
+    z-index: 2;
+    /* position: fixed;
+    top: 33%; */
+    /* right: 34%; */
+}
+input
+{
+    height: 50px;
+    border-color: #f0f0f1;
+    outline: none;
+}
+label
+{
+    color: #283b8f;
+    font-size: 1.3em;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    form 
+    {
+        width: 80% !important;
+        margin: auto;
+        background-color: #fff;
+        padding: 20px;
+        position: fixed;
+        top: calc(15%);
+        right: calc(50% - 40%);
+    }
+    .cancel
+    {
+        left: -30px !important;
+    }
+}
+
+
+
+   ::ng-deep mat-dialog-container#edit
+   {
+     position: absolute !important;
+     /* top: 50% !important;  */
+     width: 200px !important;
+     right: calc( 50%) !important;
+     height: 200px !important;
+   }
+  
+
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    z-index: 1;
+  }

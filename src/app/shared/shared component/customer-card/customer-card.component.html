@@ -1,0 +1,23 @@
+<div class="card" >
+    <div class="card-header">
+        <div class="text" >
+            <h5>{{customer?.name}}</h5>
+        </div>
+        <div class="icon"  (click)="edit(customer)">
+            <i class="fas fa-edit"></i>
+        </div>
+        <div class="clear"></div>
+    </div>
+   
+    <div class="card-horizontal">
+        <div class="img-square-wrapper">
+            <img class="" src="http://via.placeholder.com/80x80" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <p class="card-title">{{customer?.city}}, </p>
+            <p class="card-title">{{customer?.state}}</p>
+            <a class="card-text">views orders</a>
+        </div>
+    </div>
+  
+</div>

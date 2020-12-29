@@ -1,0 +1,51 @@
+.container-fluid
+{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.row 
+{
+    margin: 0 !important;
+}
+.rowMarginBottom
+{
+    margin-bottom: 2em;
+}
+button:focus
+{
+    outline: none !important;
+}
+.clear
+{
+    clear:both
+}
+p
+{
+    margin-bottom: 0;
+}
+.filter
+{
+    float: right;
+}
+.add
+{
+    margin-bottom: 3em;
+    margin-top: 2em;
+    float: left;
+}
+@media only screen and (max-width: 600px)
+{
+    .filter
+{
+    float: left;
+}
+.add
+{
+    float: none !important;
+    margin-bottom: 1em;
+}
+.rowMarginBottom
+{
+    padding: 0 !important;
+}
+}

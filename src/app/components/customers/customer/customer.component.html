@@ -1,0 +1,36 @@
+
+
+
+<div class="container-fluid">
+    <div class="container">
+        <div>
+            <h1>
+                <i class="fas fa-user"></i>
+                <span style="margin-left: 5px;">Customers</span>
+            </h1>
+        </div>
+        <div style="width: 100%;">
+            <div class="add" >
+                <button (click)="add()" style="background-color: transparent;
+                border: none;
+                color: #888282;font-weight: bold;">
+                    <i class="fas fa-plus"></i>
+                <span style="margin-left: 5px;">New customer</span>
+                </button>
+            </div>
+            <div class="filter" >
+                <form [formGroup]="filterForm" (ngSubmit)="filterCustomers()">
+                    <label>Filter: </label>
+                    <input type="text" (keyup)="filterCustomers()"  formControlName="name" class="form-control" >
+                   <button type="submit" style="background-color: transparent;border: none;outline: none;"></button>
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 rowMarginBottom" *ngFor="let customer of customers">
+               <customer-card [customer]="customer" ></customer-card>
+            </div>
+        </div>
+    </div>
+</div>
